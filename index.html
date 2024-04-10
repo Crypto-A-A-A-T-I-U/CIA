@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CIA</title>
+		<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="./assets/styles.css" rel="stylesheet" />
+		<script defer src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="#">Logo do CIA</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#local-hora">Local e Hora</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contato">Contato</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdownMenuLink"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							Categorias
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<!-- Adicionar categorias aqui -->
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navTeams"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							Atléticas
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navTeams">
+							<!-- Adicionar logos das atléticas aqui -->
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<body>
+		<div class="container mt-4">
+			<div class="row">
+				<div class="col-md-8">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Posição</th>
+								<th>Time</th>
+								<th>Pontos</th>
+								<th>Vitórias</th>
+								<th>Derrotas</th>
+								<th>Empates</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- Adicionar dados dos times aqui -->
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-4">
+                    <div>
+                        <h3>Próximos Jogos</h3>
+                        <!-- Adicionar lista de próximos jogos com logos -->
+                        <a href="#jogos-anteriores">Ver jogos anteriores</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./assets/script.js"></script>
+	</body>
+</html>

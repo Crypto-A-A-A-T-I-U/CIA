@@ -1,0 +1,84 @@
+body {
+	font-family: "Arial", sans-serif;
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+.container {
+	margin-top: 20px;
+}
+
+.navbar {
+    background-color: #f6c601;
+    border-bottom: 3px solid #d5b001;
+}
+
+.navbar-brand .navbar-light .navbar-nav .nav-link {
+	color: #333;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+
+.navbar-toggler {
+	border-color: #333;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Tabela */
+
+.table {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+	background-color: #f6c601;
+	color: #333;
+}
+
+.table th,
+.table td {
+	padding: 15px;
+	text-align: center;
+}
+
+.table tbody tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+/* Proximos Jogos */
+
+div.col-md-4 {
+	background-color: #fff;
+	padding: 15px;
+	margin-top: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+	color: #f6c601;
+	margin-bottom: 15px;
+}
+
+a {
+	color: #f6c601;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Resposibilidade */
+
+@media (max-width: 767px) {
+	.navbar-nav .dropdown-menu {
+		position: static;
+		float: none;
+	}
+}
