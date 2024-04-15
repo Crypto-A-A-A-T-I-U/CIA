@@ -1,7 +1,3 @@
 export default function Home() {
-  return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
-  )
+  return <div className="h-screen bg-background"></div>
 }
