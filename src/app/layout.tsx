@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={inter.className}>
         <header>
-          <nav className="flex h-[7vh] items-center justify-around border-b-8 border-secondary bg-primary">
+          <nav className="flex h-[9vh] items-center justify-around border-b-8 border-secondary bg-primary">
             <span>LOGO</span>
             <ul className="flex gap-x-10 text-secondary">
               <li>
