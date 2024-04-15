@@ -14,25 +14,25 @@ Estamos abertos a contribuições da comunidade! Se você deseja contribuir, por
 
 ## Rodando localmente
 
-Clone o projeto
+Clone o projeto:
 
 ```bash
   git clone https://github.com/Crypto-A-A-A-T-I-U/CIA.git
 ```
 
-Entre no diretório do projeto
+Entre no diretório do projeto:
 
 ```bash
   cd CIA
 ```
 
-Instale as dependências
+Instale as dependências:
 
 ```bash
   npm install
 ```
 
-Inicie o projeto localmente
+Inicie o projeto localmente:
 
 ```bash
   npm run dev
@@ -40,9 +40,10 @@ Inicie o projeto localmente
 
 ## Contribuindo com Código
 Para contribuir com código, recomendamos que:
-1. Faça um fork do repositório.
-2. Realize suas alterações no fork.
-3. Crie uma solicitação de Pull Request para a fusão (merge) das suas alterações com o repositório principal.
+1. Clone o repositório.
+2. Crie um branch a partir do main.
+3. Realize suas alterações no branch.
+4. Crie uma solicitação de Pull Request para a fusão (merge) das suas alterações com o repositório principal.
 
 Agradecemos sua contribuição para tornar este evento um sucesso!
 
