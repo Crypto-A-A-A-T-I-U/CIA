@@ -7,12 +7,36 @@ Este repositório é um projeto da CRYPTO (AAATIU) - Associação Atlética Acad
 Estamos abertos a contribuições da comunidade! Se você deseja contribuir, por favor, leia nosso [Código de Conduta](CODE_OF_CONDUCT.md) e nossas [Diretrizes de Contribuição](CONTRIBUTING.md) para entender como proceder.
 
 ## Tecnologias Utilizadas
-- HTML
-- CSS Vanilla
-- JavaScript Vanilla
-- Bootstrap
+- React
+- Next
+- Prisma
+- TailwindCSS
 
-Se sentir à vontade para implementar frameworks adicionais, caso deseje ou se sinta mais familiarizado com algum.
+## Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone https://github.com/Crypto-A-A-A-T-I-U/CIA.git
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd CIA
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o projeto localmente
+
+```bash
+  npm run dev
+```
 
 ## Contribuindo com Código
 Para contribuir com código, recomendamos que:
