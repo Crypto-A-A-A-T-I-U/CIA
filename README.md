@@ -7,12 +7,10 @@ Este repositório é um projeto da CRYPTO (AAATIU) - Associação Atlética Acad
 Estamos abertos a contribuições da comunidade! Se você deseja contribuir, por favor, leia nosso [Código de Conduta](CODE_OF_CONDUCT.md) e nossas [Diretrizes de Contribuição](CONTRIBUTING.md) para entender como proceder.
 
 ## Tecnologias Utilizadas
-- HTML
-- CSS Vanilla
-- JavaScript Vanilla
-- Bootstrap
-
-Se sentir à vontade para implementar frameworks adicionais, caso deseje ou se sinta mais familiarizado com algum.
+- React
+- Next
+- Prisma
+- TailwindCSS
 
 ## Contribuindo com Código
 Para contribuir com código, recomendamos que:
