@@ -12,6 +12,32 @@ Estamos abertos a contribuições da comunidade! Se você deseja contribuir, por
 - Prisma
 - TailwindCSS
 
+## Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone https://github.com/Crypto-A-A-A-T-I-U/CIA.git
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd CIA
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o projeto localmente
+
+```bash
+  npm run dev
+```
+
 ## Contribuindo com Código
 Para contribuir com código, recomendamos que:
 1. Faça um fork do repositório.
