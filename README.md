@@ -12,27 +12,49 @@ Estamos abertos a contribuições da comunidade! Se você deseja contribuir, por
 - Prisma
 - TailwindCSS
 
-## Rodando localmente
+## Configuração do Projeto
 
-Clone o projeto:
+### Pré-requisitos
+- Node.js instalado (versão recomendada: 18.17.x ou superior)
+- Docker para gerenciar containers do PostgreSQL
+
+### Instruções de Instalação
+
+1. **Clone o projeto**
 
 ```bash
   git clone https://github.com/Crypto-A-A-A-T-I-U/CIA.git
 ```
 
-Entre no diretório do projeto:
+2. **Entre no diretório do projeto:**
 
 ```bash
   cd CIA
 ```
 
-Instale as dependências:
+3. **Instale as dependências:**
 
 ```bash
   npm install
 ```
 
-Inicie o projeto localmente:
+## Configuração do Ambiente Local
+
+1. **Suba o container do PostgreSQL:**
+
+```bash
+  ./scripts/run-docker.sh up
+```
+
+2. **Execute as migrações do Prisma:**
+  
+  ```bash
+    npx prisma migrate dev
+  ```
+
+## Iniciar o Projeto:
+
+1. **Inicie o projeto localmente:**
 
 ```bash
   npm run dev
