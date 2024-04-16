@@ -89,7 +89,7 @@ export default function LoginPage() {
                     <FormControl>
                       <Input
                         placeholder="Insira a senha de administrador."
-                        className="focus:border-brand p-5 transition-all duration-100"
+                        className="p-5 transition-all duration-100 focus:border-brand"
                         {...field}
                       />
                     </FormControl>
@@ -99,7 +99,7 @@ export default function LoginPage() {
                 )}
               />
               <CardFooter className="mt-10 flex items-center justify-center p-0 md:mt-16">
-                <Button className="bg-brand hover:bg-brand w-[200%]">
+                <Button className="w-[200%] bg-brand hover:bg-brand">
                   Entrar
                 </Button>
               </CardFooter>
