@@ -69,7 +69,7 @@ export default function LoginPage() {
 
   return (
     <main className="flex h-[85vh] items-center justify-center">
-      <Card className="h-[35vh] w-[85vw]">
+      <Card className="h-[35vh] w-[85vw] md:w-[30vw]">
         <CardHeader className="text-2xl font-medium">
           <CardTitle>Painel de login</CardTitle>
           <CardDescription>
@@ -100,7 +100,7 @@ export default function LoginPage() {
                   </FormItem>
                 )}
               />
-              <CardFooter className="mt-10 flex items-center justify-center p-0">
+              <CardFooter className="mt-10 flex items-center justify-center p-0 md:mt-16">
                 <Button className="bg-brand hover:bg-brand w-[200%]">
                   Entrar
                 </Button>
