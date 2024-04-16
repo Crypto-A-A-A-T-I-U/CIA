@@ -97,7 +97,7 @@ export default function LoginPage() {
                   </FormItem>
                 )}
               />
-              <CardFooter className="mt-10 flex items-center justify-center p-0 md:mt-16">
+              <CardFooter className="mt-10 flex w-full items-center justify-center p-4 md:mt-16">
                 <Button className="w-[200%] bg-brand hover:bg-brand">
                   Entrar
                 </Button>
