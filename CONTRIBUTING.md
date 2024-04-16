@@ -22,17 +22,19 @@ Entre no diretório do projeto:
   cd CIA
 ```
 
-Instale as dependências:
+Iniciar o banco de dados via Docker:
 
 ```bash
-  npm install
+# Para rodar o banco de dados
+./scripts/run-docker up
 ```
-
-Inicie o projeto localmente:
-
+Configurar o banco e rodar o projeto:
 ```bash
-  npm run dev
+# Com o contêiner rodando, rode o comando de configuração em um outro terminal
+./docker/set-db.sh
 ```
+
+> Em caso de problemas de permissão, rodar ```sudo chmod +x [nome dos arquivos]```
 
 ### Enviando Pull Requests
 - Clone o repositório e crie um branch a partir do `main`.
