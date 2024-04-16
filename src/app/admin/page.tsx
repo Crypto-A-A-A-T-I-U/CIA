@@ -12,7 +12,7 @@ export default function AdminPage() {
     if (auth.isAuthenticated === false) {
       router.replace('/admin/login')
     }
-  }, [])
+  }, [auth.isAuthenticated, router])
 
   return (
     <div>

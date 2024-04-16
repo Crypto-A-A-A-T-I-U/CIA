@@ -48,8 +48,7 @@ export default function LoginPage() {
     if (auth.isAuthenticated) {
       router.replace('/admin')
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [auth.isAuthenticated, router])
 
   function handleAuthenticate({ password }: LoginSchemaProps) {
     if (password === process.env.ADMIN_PASSWORD) {
