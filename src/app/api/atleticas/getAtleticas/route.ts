@@ -23,7 +23,7 @@ export async function GET(req: NextRequest) {
     } catch (error) {
       console.error(error)
       return NextResponse.json({
-        error: 'Error when listing to all atléticas',
+        error: 'Error when listing all atléticas',
         status: 500,
       })
     }
