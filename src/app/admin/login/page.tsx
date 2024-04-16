@@ -28,9 +28,7 @@ import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
 const loginSchema = z.object({
-  password: z.string().min(2, {
-    message: 'Username must be at least 2 characters.',
-  }),
+  password: z.string(),
 })
 
 type LoginSchemaProps = z.infer<typeof loginSchema>
