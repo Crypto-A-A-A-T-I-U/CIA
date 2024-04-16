@@ -12,7 +12,7 @@ export async function GET(req: NextRequest) {
         },
       })
 
-      if (!atleticasExists) {
+      if (atleticasExists.length === 0) {
         return NextResponse.json({
           error: 'No Atléticas found',
           status: 404,
@@ -23,8 +23,8 @@ export async function GET(req: NextRequest) {
     } catch (error) {
       console.error(error)
       return NextResponse.json({
-        error: 'Error when listing all',
-        status: 405,
+        error: 'Error when listing to all atléticas',
+        status: 500,
       })
     }
   } else {
