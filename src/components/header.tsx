@@ -10,10 +10,10 @@ export function Header() {
 
   return (
     <header>
-      <nav className="border-brand bg-dark flex h-[9vh] items-center justify-between border-b-8 px-10 md:px-24">
+      <nav className="flex h-[9vh] items-center justify-between border-b-8 border-brand bg-dark px-10 md:px-24">
         <span className="text-slate-100">LOGO</span>
         {isDesktop ? (
-          <ul className="text-brand hidden gap-x-10 md:flex">
+          <ul className="hidden gap-x-10 text-brand md:flex">
             <li>
               <Link
                 href="/"
@@ -61,7 +61,7 @@ export function Header() {
               <MenuIcon className="text-brand" />
             </DrawerTrigger>
             <DrawerContent>
-              <ul className="text-brand flex flex-col gap-y-10 p-10">
+              <ul className="flex flex-col gap-y-10 p-10 text-brand">
                 <li>
                   <Link
                     href="/"
