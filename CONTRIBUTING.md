@@ -43,7 +43,7 @@ Agradecemos seu interesse em contribuir! Aqui estão algumas diretrizes que deve
    ./scripts/run-docker.sh up
    ```
 
-   5. **Configure o banco de dados e inicie o projeto:**
+5. **Configure o banco de dados e inicie o projeto:**
 
    ```bash
     # Com o contêiner rodando, rode o comando de configuração em um outro terminal
