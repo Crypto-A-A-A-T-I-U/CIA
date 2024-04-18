@@ -5,7 +5,7 @@ export async function PATCH(req: NextRequest) {
   if (req.method === 'PATCH') {
     try {
       const id = req.nextUrl.searchParams.get('id')
-      const { name, description, points } = await req.json()
+      const { name, description, points, gameId } = await req.json()
 
       const atleticaExists = await prisma.atletica.findUnique({
         where: {
@@ -29,6 +29,7 @@ export async function PATCH(req: NextRequest) {
           name,
           description,
           points,
+          gameId,
           updatedAt: new Date(Date.now()),
         },
       })

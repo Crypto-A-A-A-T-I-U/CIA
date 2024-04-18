@@ -14,6 +14,33 @@ model Atletica {
   points      Int      @default(0)
   createdAt   DateTime @default(now()) @map("created_at")
   updatedAt   DateTime @default(now()) @map("updated_at")
+  Game        Game?    @relation(fields: [gameId], references: [id])
+  gameId      Int?
 
   @@map("atleticas")
+}
+
+model Game {
+  id        Int        @id @default(autoincrement())
+  sport     String
+  gender    Gender
+  date      DateTime   @default(now()) @db.Timestamp(6)
+  teams     Atletica[]
+  location  String
+  status    GameStatus @default(Agendado)
+  createdAt DateTime   @default(now()) @map("created_at")
+  updatedAt DateTime   @default(now()) @map("updated_at")
+
+  @@map("games")
+}
+
+enum GameStatus {
+  Agendado
+  Progresso
+  Concluido
+}
+
+enum Gender {
+  Masculino
+  Feminino
 }
