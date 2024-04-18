@@ -21,6 +21,8 @@ const config = {
       colors: {
         dark: '#000000',
         brand: '#FCC302',
+        bracketMenu: '#0C0D0E',
+        bracket: '#181A1B',
         backgroundPage: '#202325',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

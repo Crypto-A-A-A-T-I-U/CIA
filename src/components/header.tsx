@@ -4,14 +4,20 @@ import { useMediaQuery } from '@/hooks/use-media-query'
 import Link from 'next/link'
 import { Drawer, DrawerContent, DrawerTrigger } from './ui/drawer'
 import { MenuIcon } from 'lucide-react'
+import Image from 'next/image'
 
 export function Header() {
   const isDesktop = useMediaQuery('(min-width: 768px)')
 
   return (
     <header>
-      <nav className="flex h-[9vh] items-center justify-between border-b-8 border-brand bg-dark px-10 md:px-24">
-        <span className="text-slate-100">LOGO</span>
+      <nav className="flex h-[9vh] items-center justify-between border-b-8 border-brand bg-dark px-10">
+        <Image
+          src="/CIA.png"
+          alt="Logo da Liga das Atléticas"
+          width={45}
+          height={45}
+        />
         {isDesktop ? (
           <ul className="hidden gap-x-10 text-brand md:flex">
             <li>
