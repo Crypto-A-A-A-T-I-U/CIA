@@ -1,16 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { z } from 'zod'
 import prisma from '../../lib/prisma'
-
-const createAtleticaSchema = z.object({
-  name: z.string(),
-  description: z.string(),
-})
 
 export async function POST(req: NextRequest) {
   if (req.method === 'POST') {
     try {
-      const { name, description } = createAtleticaSchema.parse(await req.json())
+      const { name, description, points } = await req.json()
 
       const atleticaExists = await prisma.atletica.findFirst({
         where: {
@@ -29,6 +23,9 @@ export async function POST(req: NextRequest) {
         data: {
           name,
           description,
+          points,
+          createdAt: new Date(Date.now()),
+          updatedAt: new Date(Date.now()),
         },
       })
 

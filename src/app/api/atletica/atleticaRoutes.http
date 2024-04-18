@@ -1,0 +1,31 @@
+POST http://localhost:3000/api/atletica/createAtletica
+Content-Type: application/json
+
+{
+    "name": "CRYPTO",
+    "description": "Atlética de TI da Unisul",
+    "points": 0
+}
+
+###
+GET http://localhost:3000/api/atletica/getAtletica?id=1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/atletica/getAtleticas
+Content-Type: application/json
+
+###
+PATCH http://localhost:3000/api/atletica/updateAtletica?id=5
+Content-Type: application/json
+
+{
+    "name": "CRYPTO",
+    "description": "Atlética de TI da Unisul",
+    "points": 0,
+    "gameId": 2
+}
+
+###
+DELETE http://localhost:3000/api/atletica/deleteAtletica?id=1
+Content-Type: application/json

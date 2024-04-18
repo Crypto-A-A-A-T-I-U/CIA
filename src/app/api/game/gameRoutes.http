@@ -1,0 +1,36 @@
+POST http://localhost:3000/api/game/createGame
+Content-Type: application/json
+
+{
+    "sport": "Futsal",
+    "gender": "Feminino",
+    "date": "2021-10-20T07:00:00Z",
+    "location": "Unisul PB",
+    "status": "Agendado"
+}
+
+###
+GET http://localhost:3000/api/game/getGame?id=11
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/game/getGames
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/game/getGames?sport=Basquete&gender=Feminino&date=2022-12-31&location=Unisul%20PB&status=Progresso
+Content-Type: application/json
+
+###
+PATCH http://localhost:3000/api/game/updateGame?id=1
+Content-Type: application/json
+
+{
+    "sport": "Basquete",
+    "gender": "Feminino",
+    "status": "Progresso"
+}
+
+###
+DELETE http://localhost:3000/api/game/deleteGame?id=1
+Content-Type: application/json
