@@ -7,9 +7,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Atletica {
+model Athletic {
   id          Int      @id @default(autoincrement())
-  name        String
+  name        String   @unique
   description String?
   points      Int      @default(0)
   createdAt   DateTime @default(now()) @map("created_at")
@@ -25,7 +25,7 @@ model Game {
   sport     String
   gender    Gender
   date      DateTime   @default(now()) @db.Timestamp(6)
-  teams     Atletica[]
+  teams     Athletic[]
   location  String
   status    GameStatus @default(Agendado)
   createdAt DateTime   @default(now()) @map("created_at")
