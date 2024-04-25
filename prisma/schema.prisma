@@ -34,6 +34,16 @@ model Game {
   @@map("games")
 }
 
+model Category {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @default(now()) @map("updated_at")
+
+  @@map("categories")
+}
+
 enum GameStatus {
   Agendado
   Progresso
