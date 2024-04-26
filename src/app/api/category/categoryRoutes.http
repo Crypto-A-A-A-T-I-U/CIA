@@ -1,0 +1,25 @@
+POST http://localhost:3000/api/category/createCategory
+Content-Type: application/json
+
+{
+    "name": "Futebol 2",
+    "description": "Categoria de teste"
+}
+
+
+###
+GET http://localhost:3000/api/category/getCategories
+Content-Type: application/json
+
+###
+PATCH http://localhost:3000/api/category/updateCategory?id=1
+Content-Type: application/json
+
+{
+    "name": "Futebol de Salão",
+    "description": "Categoria de teste"
+}
+
+###
+DELETE http://localhost:3000/api/category/deleteCategory?id=1
+Content-Type: application/json
